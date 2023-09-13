@@ -1,8 +1,10 @@
+import openpyxl
 import pandas as pd
 import streamlit as st
 import random
 import folium
 from streamlit_folium import folium_static
+
 st.set_page_config(layout="wide")
 
 romantic_df = pd.read_excel('restoran.xlsx')
@@ -176,3 +178,5 @@ else:
             folium_static(m)
     else:
         col3.write('Eşleşen mekan bulunamadı.')
+
+
